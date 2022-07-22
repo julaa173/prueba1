@@ -1,0 +1,25 @@
+git config --global user.name "Nombre de usuario"
+git config --global user.email "direccion_de_email@dominio.com"
+(inicializar) -> git init
+(ver estado y archivos) -> git status
+(agregar a staging area) -> git add nombrearchivo.extensión
+						   -> git add -A, git add .	
+
+(pasar al repositorio local) -> git commit (i para insertar un comentario, ESC salir del comentario, :wq para grabar y salir )
+								-> git commit -m "Descripción del cambio"
+
+(Historial de commits) git log / --oneline (abreviada) / --graph (detalle de ramas)
+-------------------------------------------------------------------------- 
+(Agregar origin remoto de GitHub)git remote add origin <url_repositorio>
+(Crear rama principal)git branch -M main
+(Subir al repositorio remoto)git push -u origin main
+
+
+(Clonar un repositorio, descargar el proyecto a una carpeta local) -> git clone <url_repositorio>
+(Bajar a una carpeta con distinto nombre) -> git clone <url> nombre_directorio_nuevo
+--------------------------------------------------------------------------------------------------
+RAMAS
+(Creamos una rama, pero no me posiciono) -> git branch <nombre_rama>
+(Para posicionarme en la rama) -> git checkout <nombre_rama>
+***(Los 2 pasos anteriores juntos) -> git checkout -b <nombre_rama>
+(Para saber en que rama estoy) -> git branch 
